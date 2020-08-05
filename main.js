@@ -10,18 +10,25 @@ response = await response.json();
 
 for (var i = 0; i < response.length; i++) {
 var messegeData = response[i];
-console.log (messegeData);
-}
+console.log (massageData);
 
 var message =
 
     `<div class="message">
-      <div class="message-nickname">Name</div>
-        <div class="message-text"> Message </div>
+      <div class="message-nickname"> ${massageData.name}</div>
+        <div class="message-text"> ${massageData.Message} </div>
     </div>`
     ;
+  messages.innerHTML = message;
 
-    messages.innerHTML = message;
+
+
+  
+}
+
+
+
+
 
 
 }
