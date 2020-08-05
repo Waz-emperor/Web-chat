@@ -9,9 +9,9 @@ response = await response.json();
 
 var message =
 
-    `<div class="masage">
-      <div class="masage-nickname">Name</div>
-        <div class="masage-text"> Messege </div>
+    `<div class="message">
+      <div class="message-nickname">Name</div>
+        <div class="message-text"> Messege </div>
     </div>`;
 
     messages.innerHTML = message;

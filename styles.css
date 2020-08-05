@@ -3,7 +3,7 @@ body {
 }
 
 
-.masage-wrapper {
+.message-wrapper {
 border: 2px solid #f1f1f1;
 border-radius: 2px;
 padding: 20px;
@@ -12,24 +12,24 @@ height: 70vh;
 overflow: auto;
 }
 
-.masage{
+.message{
 padding: 15px;
 border-bottom: 2px solid #f1f1f1;
 
 }
 
-.masage .masage-nickname {
+.message .message-nickname {
 font-weight: bold;
 font-size: 1.5rem;
 
 }
 
-.masage .masage-text {
+.message .message-text {
 color: black;
 font-size: 1.2rem;
 }
 
-.send-masages-wrapper {
+.send-messages-wrapper {
   height: 120px;
   padding: 10px;
   border: 2px solid #f1f1f1;
@@ -38,7 +38,7 @@ font-size: 1.2rem;
 
 }
 
-.send-masages-input {
+.send-messages-input {
 width: 100%;
 border-bottom: 2px solid #f1f1f1;
 height: 40px;
@@ -46,7 +46,7 @@ border-radius: 5px;
 resize: none;
 
 }
-.send-masages-button {
+.send-messages-button {
 height: 40px;
 }
 
@@ -54,7 +54,7 @@ span {
   font-size: 1.2rem;
 }
 
-.send-masages-btn-wrapper {
+.send-messages-btn-wrapper {
   display: flex;
   text-align: center;
   justify-content: center;
