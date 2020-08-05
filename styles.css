@@ -1,0 +1,63 @@
+body {
+  background-color: grey;
+}
+
+
+.masage-wrapper {
+border: 2px solid #f1f1f1;
+border-radius: 2px;
+padding: 20px;
+
+height: 70vh;
+overflow: auto;
+}
+
+.masage{
+padding: 15px;
+border-bottom: 2px solid #f1f1f1;
+
+}
+
+.masage .masage-nickname {
+font-weight: bold;
+font-size: 1.5rem;
+
+}
+
+.masage .masage-text {
+color: black;
+font-size: 1.2rem;
+}
+
+.send-masages-wrapper {
+  height: 120px;
+  padding: 10px;
+  border: 2px solid #f1f1f1;
+  border-radius: 2px;
+  margin-top: 20px;
+
+}
+
+.send-masages-input {
+width: 100%;
+border-bottom: 2px solid #f1f1f1;
+height: 40px;
+border-radius: 5px;
+resize: none;
+
+}
+.send-masages-button {
+height: 40px;
+}
+
+span {
+  font-size: 1.2rem;
+}
+
+.send-masages-btn-wrapper {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-top: 27px;
+
+}
