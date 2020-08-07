@@ -56,7 +56,7 @@ if (userMessage.length === 0) {
 
 await fetch('https://fchatiavi.herokuapp.com/send/tfge/?offset=0&limit=10',{
   method: 'POST',
-  body: JSON.sringify({
+  body: JSON.stringify({
     Name: userNickname,
     Message: userMessage,
   })
