@@ -9,7 +9,7 @@ sendButton.addEventListener('click', sendUserMessage)
 
 async function getMessagesFromServer() {
 
-var response = await fetch('https://fchatiavi.herokuapp.com/get/tfge/?offset=0&limit=10');
+var response = await fetch('https://fchatiavi.herokuapp.com/get/tfge/?offset=0&limit=100000000');
 
 response = await response.json();
 
