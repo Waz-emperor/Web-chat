@@ -21,8 +21,8 @@ console.log (messageData);
 var message =
 
     `<div class="message">
-      <div class="message-nickname"> ${massageData.Name}</div>
-        <div class="message-text"> ${massageData.Message} </div>
+      <div class="message-nickname"> ${messageData.Name}</div>
+        <div class="message-text"> ${messageData.Message} </div>
     </div>`
     ;
 
