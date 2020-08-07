@@ -58,7 +58,7 @@ await fetch('https://fchatiavi.herokuapp.com/send/tfge/?offset=0&limit=10',{
   method: 'POST',
   body: JSON.sringify({
     Name: userNickname,
-    Massage: userMessage,
+    Message: userMessage,
   })
 });
   getMessagesFromServer();
