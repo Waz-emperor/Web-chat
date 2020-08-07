@@ -15,7 +15,7 @@ response = await response.json();
 
 var allMessagesHTML = '';
 for (var i = 0; i < response.length; i++) {
-var messegeData = response[i];
+var messageData = response[i];
 console.log (messageData);
 
 var message =
