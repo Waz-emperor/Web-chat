@@ -41,7 +41,7 @@ messages.innerHTML =allMessagesHTML;
 
 async function sendUserMessage() {
 
-var userNickname =  document.getElementById('nickname-input').value;
+var userNickname =  document.getElementById('Nickname-input').value;
 var userMessage =  document.getElementById('Message-input').value;
 
 if (userNickname.length === 0) {
