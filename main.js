@@ -16,7 +16,7 @@ response = await response.json();
 var allMessagesHTML = '';
 for (var i = 0; i < response.length; i++) {
 var messegeData = response[i];
-console.log (massageData);
+console.log (messageData);
 
 var message =
 
