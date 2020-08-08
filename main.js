@@ -16,9 +16,11 @@ function start() {
 
 var lastMessages = [];
 
-var roomname = roomNameInput.value;
+
 
 async function getMessagesFromServer() {
+
+  var roomname = roomNameInput.value;
 
 var response = await fetch(`https://fchatiavi.herokuapp.com/get/${roomname}/?offset=0&limit=100000000`);
 
