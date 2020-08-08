@@ -1,5 +1,5 @@
 
-
+debugger;
 
 var massages = document.getElementById ('messages');
 
