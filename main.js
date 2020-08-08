@@ -1,11 +1,13 @@
 
-debugger;
+//debugger;
 
 var massages = document.getElementById ('messages');
 
 var sendButton = document.getElementById('send-btn');
 
 sendButton.addEventListener('click', sendUserMessage)
+
+start();
 
 function start() {
   setInterval(getMessagesFromServer, 2000);
