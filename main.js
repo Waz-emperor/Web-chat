@@ -22,6 +22,8 @@ response = await response.json();
 
 var messagesHTML = fromMessagesHTML(response);
 
+debugger;
+
 console.log(messagesHTML);
 
 //messages.innerHTML = allMessagesHTML;
