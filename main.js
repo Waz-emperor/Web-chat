@@ -12,7 +12,7 @@ function start() {
 
 }
 
-var lastMessages = []
+var lastMessages = [];
 
 async function getMessagesFromServer() {
 
