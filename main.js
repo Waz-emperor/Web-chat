@@ -20,6 +20,8 @@ var response = await fetch('https://fchatiavi.herokuapp.com/get/tfg/?offset=0&li
 
 response = await response.json();
 
+debugger;
+
 if (response == null) {
   messages.innerHTML = 'No messages';
   return;
