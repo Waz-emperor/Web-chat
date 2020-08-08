@@ -7,36 +7,27 @@ var sendButton = document.getElementById('send-btn');
 
 sendButton.addEventListener('click', sendUserMessage)
 
+function start() {
+  setInterval(getMessagesFromServer, 2000);
+
+}
+
+var lastMessages = []
+
 async function getMessagesFromServer() {
 
 var response = await fetch('https://fchatiavi.herokuapp.com/get/tfge/?offset=0&limit=100000000');
 
 response = await response.json();
 
-var allMessagesHTML = '';
-for (var i = 0; i < response.length; i++) {
-var messageData = response[i];
-console.log (messageData);
-
-var message =
-
-    `<div class="message">
-      <div class="message-nickname"> ${messageData.Name}</div>
-        <div class="message-text"> ${messageData.Message} </div>
-    </div>`
-    ;
-
- allMessagesHTML = allMessagesHTML + message;
-
-
-
-}
-
-
-
+var messagesHTML = fromMessagesHTML(response);
 
 messages.innerHTML =allMessagesHTML;
 
+if (lastMessages.length < response.length) {
+  scrollToEnd();
+}
+ lastMessages = response;
 }
 
 async function sendUserMessage() {
@@ -62,4 +53,30 @@ await fetch('https://fchatiavi.herokuapp.com/send/tfge/?offset=0&limit=10',{
   })
 });
   getMessagesFromServer();
+scrollToEnd();
+
+
+
+}
+
+function fromMessagesHTML(messages) {var allMessagesHTML = '';
+for (var i = 0; i < response.length; i++) {
+var messageData = response[i];
+console.log (messageData);
+
+var message =
+
+    `<div class="message">
+      <div class="message-nickname"> ${messageData.Name}</div>
+        <div class="message-text"> ${messageData.Message} </div>
+    </div>`
+    ;
+
+ allMessagesHTML = allMessagesHTML + message;
+ }
+ return AllMessagesHTML()
+}
+
+function scrollToEnd() {
+  messages.scrollTop = messages.scrollHeight;
 }
