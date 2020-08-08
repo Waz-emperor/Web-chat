@@ -74,7 +74,7 @@ var message =
 
  allMessagesHTML = allMessagesHTML + message;
  }
- return allMessagesHTML()
+ return allMessagesHTML;
 }
 
 function scrollToEnd() {
