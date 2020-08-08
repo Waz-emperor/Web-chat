@@ -18,11 +18,11 @@ var lastMessages = [];
 
 async function getMessagesFromServer() {
 
-var response = await fetch('https://fchatiavi.herokuapp.com/get/tfg/?offset=0&limit=100000000');
+var response = await fetch('https://fchatiavi.herokuapp.com/get/tfge/?offset=0&limit=100000000');
 
 response = await response.json();
 
-debugger;
+//debugger;
 
 if (response == null) {
   messages.innerHTML = 'No messages';
@@ -58,7 +58,7 @@ if (userMessage.length === 0) {
   return;
 }
 
-await fetch('https://fchatiavi.herokuapp.com/send/tfg/?offset=0&limit=10',{
+await fetch('https://fchatiavi.herokuapp.com/send/tfge/?offset=0&limit=10',{
   method: 'POST',
   body: JSON.stringify({
     Name: userNickname,
