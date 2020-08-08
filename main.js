@@ -22,7 +22,7 @@ response = await response.json();
 
 var messagesHTML = fromMessagesHTML(response);
 
-messages.innerHTML =allMessagesHTML;
+messages.innerHTML = allMessagesHTML;
 
 if (lastMessages.length < response.length) {
   scrollToEnd();
