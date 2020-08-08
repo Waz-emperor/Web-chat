@@ -59,7 +59,8 @@ scrollToEnd();
 
 }
 
-function fromMessagesHTML(messages) {var allMessagesHTML = '';
+function fromMessagesHTML(messages) {
+  var allMessagesHTML = '';
 for (var i = 0; i < messages.length; i++) {
 var messageData = messages[i];
 console.log (messageData);
