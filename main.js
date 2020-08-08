@@ -2,10 +2,10 @@
 //debugger;
 
 var massages = document.getElementById ('messages');
-
+var roomNameInput = document.getElementById ('roomname-input');
 var sendButton = document.getElementById('send-btn');
 
-sendButton.addEventListener('click', sendUserMessage)
+sendButton.addEventListener('click', sendUserMessage);
 
 start();
 
@@ -16,9 +16,11 @@ function start() {
 
 var lastMessages = [];
 
+var roomname = roomNameInput.value;
+
 async function getMessagesFromServer() {
 
-var response = await fetch('https://fchatiavi.herokuapp.com/get/tfge/?offset=0&limit=100000000');
+var response = await fetch(`https://fchatiavi.herokuapp.com/get/${roomname}/?offset=0&limit=100000000`);
 
 response = await response.json();
 
@@ -58,7 +60,7 @@ if (userMessage.length === 0) {
   return;
 }
 
-await fetch('https://fchatiavi.herokuapp.com/send/tfge/?offset=0&limit=10',{
+await fetch(`https://fchatiavi.herokuapp.com/send/${roomname}/?offset=0&limit=10`,{
   method: 'POST',
   body: JSON.stringify({
     Name: userNickname,
